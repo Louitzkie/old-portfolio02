@@ -13,7 +13,7 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <div class="logo">Lastacruz</div>
+          <a href="./index.html" class="logo">Lastacruz</a>
           <ul class="nav-ul" id="navUl">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -31,11 +31,12 @@
     <section class="hero" id="home">
       <div class="container row">
         <div class="hero_text">
-          <h1>Hi,</h1>
-          <h2>I am <span>Louis</span></h2>
-          <p>Front end web developer UI/UX</p>
-          <!-- <a href="#" class="hero_cta cta1">Visit Github</a>
-                  <a href="#" class="hero_cta cta2">Download CV</a> -->
+          <h1 class="hero__title">Don't have website in 2022?</h1>
+          <p>
+            You're on the right place and time i will help you build your
+            bussiness and attracted potential customer.
+          </p>
+          <button class="btn">Download my CV</button>
         </div>
         <img src="./src/illustration-mockups.svg" alt="" class="hero_img" />
       </div>
@@ -50,7 +51,7 @@
         <div class="about_text">
           <h2>Get to know me a little</h2>
           <p>
-            I am Louis Andrie Cruz, an inspiring self taught web developer,
+            Hi, i am Louis Andrie Cruz, an inspiring self taught web developer,
             building website is my absolute passion and happiness.
           </p>
           <div class="icons">
@@ -182,31 +183,32 @@
     </section>
     <!-- XXX project XXX -->
 
-    <!-- === footer === -->
-    <section class="footer" id="contact">
+    <!-- === CONTACT === -->
+    <section class="contact" id="contact">
       <div class="container">
-        <h2 class="footer-logo">Contact</h2>
-        <div class="row">
-          <div class="box">
-            <h2>Phone no#</h2>
-            <img src="./contact.svg" alt="" />
-            <p>+09 38 939 7563</p>
+        <form action="#" class="form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
           </div>
-          <div class="box">
-            <h2>Email</h2>
-            <img src="./email.svg" alt="" />
-            <p>Louis_cruz10@yahoo.com</p>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="off" />
           </div>
-          <div class="box">
-            <h2>Location</h2>
-            <img src="./location.svg" alt="" />
-            <p>Cainta, Rizal (PH)</p>
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
-        </div>
+        </form>
         <div class="copy">Portfolio - Made with love</div>
       </div>
     </section>
-    <!-- XXX FOOTER XXX -->
+    <!-- XXX CONTACT XXX -->
 
     <script src="App.js"></script>
   </body>

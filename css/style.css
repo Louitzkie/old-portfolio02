@@ -127,7 +127,6 @@ body {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  pointer-events: none;
   color: var(--clr-primary);
 }
 
@@ -428,13 +427,13 @@ body {
 
 /* XXX PROJECT XXX */
 /* === FOOTER === */
-.footer {
+.contact {
   padding: 3rem 0;
   background: var(--clr-primary);
   color: var(--white);
 }
 
-.footer-logo {
+.contact-logo {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -443,7 +442,7 @@ body {
   margin-bottom: 20px;
 }
 
-.footer .box {
+.contact .box {
   text-align: center;
   width: 250px;
   height: 200px;
@@ -463,13 +462,13 @@ body {
   border-radius: 0.3em;
 }
 
-.footer .box:hover {
+.contact .box:hover {
   background: var(--clr-secondary);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.footer .box img {
+.contact .box img {
   width: 70px;
   height: 70px;
   margin-bottom: 15px;
@@ -477,20 +476,20 @@ body {
           filter: invert(1) hue-rotate(180deg);
 }
 
-.footer .box h2 {
+.contact .box h2 {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
 
-.footer .box p {
+.contact .box p {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
-.footer .copy {
+.contact .copy {
   text-align: center;
   margin-top: 25px;
   font-weight: 600;
@@ -606,11 +605,35 @@ body {
     padding: 0 1.5rem;
   }
   /* XXX PROJECT XXX */
-  .footer .row {
+  .contact .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form div > * + * {
+  margin-bottom: 1rem;
+}
+
+.form input {
+  padding: 1em 0;
+  border: none;
+}
+
+.form input,
+.form textarea {
+  border-radius: 6px;
 }
 /*# sourceMappingURL=style.css.map */
