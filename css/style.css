@@ -52,6 +52,15 @@ body {
   margin: auto;
 }
 
+.btn {
+  border: 0;
+  background-color: var(--clr-secondary);
+  padding: 1rem 2rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
 /* XXX UTILITIES XXX */
 .header {
   position: relative;
